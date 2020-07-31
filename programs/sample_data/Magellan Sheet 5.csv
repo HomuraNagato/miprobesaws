@@ -1,0 +1,117 @@
+Well positions,Raw data
+A1,44
+B1,47
+C1,39
+D1,55
+E1,36
+F1,55
+G1,33
+H1,51
+A2,25
+B2,43
+C2,28
+D2,46
+E2,26
+F2,47
+G2,25
+H2,53
+A3,28
+B3,48
+C3,28
+D3,45
+E3,30
+F3,46
+G3,30
+H3,53
+A4,22
+B4,46
+C4,34
+D4,49
+E4,25
+F4,48
+G4,25
+H4,44
+A5,23
+B5,48
+C5,27
+D5,47
+E5,22
+F5,54
+G5,28
+H5,54
+A6,20
+B6,44
+C6,23
+D6,50
+E6,19
+F6,50
+G6,25
+H6,56
+A7,24
+B7,56
+C7,22
+D7,57
+E7,23
+F7,54
+G7,27
+H7,56
+A8,15
+B8,49
+C8,19
+D8,48
+E8,16
+F8,47
+G8,18
+H8,43
+A9,24
+B9,55
+C9,33
+D9,58
+E9,19
+F9,52
+G9,34
+H9,48
+A10,14
+B10,43
+C10,20
+D10,45
+E10,28
+F10,45
+G10,18
+H10,45
+A11,13
+B11,45
+C11,26
+D11,51
+E11,21
+F11,53
+G11,20
+H11,51
+A12,13
+B12,30
+C12,23
+D12,40
+E12,14
+F12,40
+G12,15
+H12,42
+Date of measurement: 2020-05-25/Time of measurement: 13:50:31,
+00000 MiProbes Fluo1.mth,
+483nm - 525nm,
+SAFIRE II,
+Instrument serial number: 608000005,
+Measurement mode: Fluorescence Top,
+Excitation wavelength: 483 nm,
+Emission wavelength: 525 nm,
+Excitation bandwidth: 20.0 nm,
+Emission bandwidth: 20.0 nm,
+Gain (Manual): 84,
+Number of reads: 4,
+FlashMode: High speed,
+Integration time: 40 µs,
+Lag time: 0 µs,
+Plate definition file: GRE96fb.pdf,
+Z-Position (Manual): 11200 µm,
+Unit: RFU,
+Meas. temperature: Raw data: 30.7 °C,
+"Date: 2020-05-25, Time: 13:50:31",

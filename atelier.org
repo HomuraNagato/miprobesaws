@@ -1,0 +1,108 @@
+
+* DevOps for data analytics
+
+** Topology of Dataflow pipelines
+
+ensure throughput and latency are measured and optimized
+
+** scale
+
+Azure kubernetes allows a few lines of code to allow scalability of service
+
+cosmos db formatted machine data
+
+[[https://docs.microsoft.com/en-us/azure/cosmos-db/modeling-data][azure schema-less reference]]
+
+One-to-many relationship
+
+Machine document:
+{
+  "id": "machine01",
+  "name": "Machine Microbial"
+}
+
+Experiment document:
+{
+  "experiment": 1,
+  "machine-id": "machine01",
+  "meta-id": "platter-X_Ab-Y",
+  "assay": "gfp",
+  "results": [
+    { "id": 1, "temp": 30, "value": 120 },
+    { "id": 2, "temp": 32, "value": 140 },
+    ...
+    { "id": 100, "temp": 31, "value": 111 },
+    ]
+}
+
+Metadata document:
+{
+  "id": "platter-X_Ab-Y",
+  "Ab_conc": 0.1,
+  "plate_dilution": [
+    { "id": 1, "value": 0.00 },
+    { "id": 2, "value": 0.01 },
+    { "id": 3, "value": 0.02 },
+    { "id": 4, "value": 0.03 }
+}
+* azure instances
+
+| instance | price (month) | discount | cpu | ram | storage | total |
+|----------+---------------+----------+-----+-----+---------+-------|
+| d2       |            98 |       27 |   2 |   7 |     100 |    71 |
+| d2a v4   |            70 |       40 |   2 |   8 |      50 |    41 |
+| e2a v4   |            92 |       41 |   2 |  16 |      50 |    54 |
+| d4a v4   |           140 |       40 |   4 |  16 |     100 |    83 |
+| e4a v4   |           184 |       41 |   4 |  32 |     100 |   108 |
+
+
+organization     miProbesAzure
+project          miProbesAzure
+resource group   AzureRG
+container        miProbesAzureCR
+web app name     miProbesAzure
+
+
+username         nagato
+password         Mysterious13!#
+* aws instances
+
+aws login
+max@miprobes.de
+MiProbes2019!
+
+mosh -ssh="ssh -i ~/.ssh/miprobes.pem" ubuntu@18.184.104.202
+
+ssh -i ~/.ssh/miprobes.pem ubuntu@18.184.104.202
+
+[[https://console.aws.amazon.com/iam/home][aws IAM console]]
+user: admin
+pwd:  password
+
+access key ID: AKIAZEU2K5E4KPWXB556
+secret access key: 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
+
+** s3
+
+putting objects into s3
+https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Bucket.put_object
+
+* class heirarchy
+
+Classes 
+ - CosmosDB
+ - Machines (A, B, ..., N)
+
+
+uploading files
+ - Code takes raw data, upserts into aws file storage
+ - pull from file storage
+ - transform using machine class
+ - upsert into database
+ - display
+
+query table, heatmap, or graph
+ - query from database
+ - display
+
+assay template values

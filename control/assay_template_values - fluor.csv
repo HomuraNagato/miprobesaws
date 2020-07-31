@@ -1,0 +1,29 @@
+﻿parameter,value,,,,,,,,,,,
+inducer,fluor,,,,,,,,,,,
+inducer concentration,0.1,,,,,,,,,,,
+media,LB,,,,,,,,,,,
+volume in well,3ul,,,,,,,,,,,
+strain,e. coli,,,,,,,,,,,
+induction time,,,,,,,,,,,,
+plate reader,,,,,,,,,,,,
+culture type,,overnight,day,,,,,,,,,
+researcher name,,,,,,,,,,,,
+VP,,,,,,,,,,,,
+,,,,,,,,,,,,
+post-experiment,,,,,,,,,,,,
+start time,,,,,,,,,,,,
+read time,,,,,,,,,,,,
+plate reader method,,,,,,,,,,,,
+date,,,,,,,,,,,,
+time,,,,,,,,,,,,
+,,,,,,,,,,,,
+well_layout,,,,,,,,,,,,
+letter,1,2,3,4,5,6,7,8,9,10,11,12
+A,V1_TF1_unind,V1_TF2_unind,V1_TF3_unind,V1_TF4_unind,V1_TF5_unind,V1_TF6_unind,V1_TF7_unind,V1_TF8_unind,V1_TF9_unind,V1_TF10_unind,V1_TF11_unind,V1_TF12_unind
+B,V1_TF1_ind,V1_TF2_ind,V1_TF3_ind,V1_TF4_ind,V1_TF5_ind,V1_TF6_ind,V1_TF7_ind,V1_TF8_ind,V1_TF9_ind,V1_TF10_ind,V1_TF11_ind,V1_TF12_ind
+C,V1_TF13_unind,V1_TF14_unind,V1_TF15_unind,V1_TF16_unind,V1_TF17_unind,V1_TF18_unind,V1_TF19_unind,V1_TF20_unind,V1_TF21_unind,V1_TF22_unind,V1_TF23_unind,V1_TF24_unind
+D,buffer,buffer,buffer,buffer,buffer,V1_TF25_unind,V1_TF25_ind,buffer,buffer,buffer,buffer,buffer
+E,V1_TF13_ind,V1_TF14_ind,V1_TF15_ind,V1_TF16_ind,V1_TF17_ind,V1_TF18_ind,V1_TF19_ind,V1_TF20_ind,V1_TF21_ind,V1_TF22_ind,V1_TF23_ind,V1_TF24_ind
+F,V1_TF25_unind,V1_TF26_unind,V1_TF27_unind,V1_TF28_unind,V1_TF29_unind,V1_TF30_unind,V1_TF31_unind,V1_TF32_unind,V1_TF33_unind,V1_TF34_unind,V1_TF35_unind,V1_TF36_unind
+G,buffer,buffer,buffer,buffer,buffer,buffer,buffer,buffer,buffer,buffer,H2O,buffer
+H,V1_TF25_ind,V1_TF26_ind,V1_TF27_ind,V1_TF28_ind,V1_TF29_ind,V1_TF30_ind,V1_TF31_ind,V1_TF32_ind,V1_TF33_ind,V1_TF34_ind,V1_TF35_ind,V1_TF36_ind

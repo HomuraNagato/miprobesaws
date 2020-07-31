@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<div id="wrapper">
+  <div class="hero" id="table">
+    
+	barcode: <input type="text" value="" id="analysis-query">
+
+	<div class="graph" id="scattergraph">
+	  <script>
+	    var graphs = {{graph | safe}};
+	    Plotly.plot("scattergraph",graphs,{});
+	  </script>
+	</div>
+
+	<div class="graph" id="normalizedgraph">
+	  <script>
+	    var normalized_graphs = {{normalized_graph | safe}};
+	    Plotly.plot("normalizedgraph",normalized_graphs,{});
+	  </script>
+	</div>
+	
+      </div>      
+      
+</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+
+<script>
+  
+      $('#analysis-query').keypress(function(event) {
+	  if((event.keyCode || event.which) == 13) {
+	      //console.log("pressed enter");
+
+	      $.ajax({
+		  url: "/analysis",
+		  type: "GET",
+		  contentType: "application/json;charset=UTF-8",
+		  data: {
+		      'query': document.getElementById("analysis-query").value,
+		      'action': "wellLayout"
+		  },
+		  dataType:"json",
+		  success: function (data) {
+		      Plotly.newPlot("scattergraph", data);
+		  }
+	      });
+	      
+	      $.ajax({
+		  url: "/analysis",
+		  type: "GET",
+		  contentType: "application/json;charset=UTF-8",
+		  data: {
+		      'query': document.getElementById("analysis-query").value,
+		      'action': "cellLayout"
+		  },
+		  dataType:"json",
+		  success: function (data) {
+		      Plotly.newPlot("normalizedgraph", data);
+		  }
+	      });
+
+	  }
+      });
+  
+</script>
+
+{% endblock %}
